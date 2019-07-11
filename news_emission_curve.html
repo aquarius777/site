@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_q.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div id="mob_nav" class="collapse in">
+    <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="tech.html">tech</a></li>
+        <li class="sel"><a href="news_list.html">news</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="team.html">team</a></li>
+        <li><a href="reach_us.html">contact us</a></li>
+    </ul>
+</div>
+<div id="bd">
+    <div id="hd">
+        <div class="logo"><a href="index.html" title="Ergo"><img src="img/logos/white_full.png" alt=""></a></div>
+        <a href="#" class="btn_mob_menu collapsed" data-toggle="collapse" data-target="#mob_nav"></a>
+        <ul class="menuHeader">
+            <li><a href="index.html">About</a></li>
+            <li><a href="tech.html">tech</a></li>
+            <li class="sel"><a href="news_list.html">news</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="team.html">team</a></li>
+            <li><a href="reach_us.html">contact us</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="row">
+            <ul class="breadcrumb">
+                <li>&nbsp;</li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-sm-12 col-lg-10">
+                <div class="news_page">
+                    <div class="news_date">
+                        <span class="news_date_day">29</span>
+                        03.18
+                    </div>
+                    <h1>ERGO Emission curve</h1>
+                    <p>After multiple internal discussions as well as taking into consideration our community's input, we are pleased to announce Ergo's MainNet emission curve which will be applied upon launch.</p>
+                    <p>Emission curve was configured based on these considerations:
+                    <ul style="list-style-type:disc">
+                        <li>- Total supply: 100 million tokens (as described in <a href="faq.html">FAQ</a> section).</li>
+                        <li>- Token distribution timeline: 8 years (due to Ergo's economy model [see papers in <a href="tech.html">TECH</a> section] it is possible to issue all tokens within this amount of time).</li>
+                        <li>- Block interval: 2 minutes (in order to establish a robust and secure network).</li>
+                        <li>- Fixed rate during initial 2 years: allowing this time frame so the circulating supply becomes more predictable.</li>
+                        <li>-  Miners rewards' reduction every 3 months, beginning after initial 2 years: in order to calculate rewards in a more predictable manner.
+                        </li>
+                    </ul>
+                    </p>
+                    <p>Taking all these concepts into consideration, Ergo's emission curve is as illustrated below:</p>
+                    <p><img src="img/curve_combined.png" width="900" alt=""></p>
+                    <p>Detailed formula is available in our <a href="https://github.com/ergoplatform/ergo/blob/master/src/main/scala/org/ergoplatform/mining/emission/CoinsEmission.scala#L36">GitHub</a> - it begins with 75 coins per block, such reward is diminished by 3 coins every 3 months. Therefore 1st year supply will be 19,710,000 coins while total supply will equal 97,739,925 coins.</p>
+                    <p>This emission curve will be used in both money and data chains. Regarding initial 1st year supply,  a total of 3,029,000 $EFYT coins shall be burnt thus leaving 1,971,000 $EFYT coins as circulating supply.</p>
+
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+
+    </div>
+    <div class="empty_box"></div>
+</div>
+<div id="ft">
+    <div class="copy">&copy; Ergo, 2018</div>
+    <ul class="menuFooter">
+        <li><a href="index.html">About</a></li>
+        <li><a href="tech.html">tech</a></li>
+        <li class="sel"><a href="news_list.html">news</a></li>
+        <li><a href="team.html">team</a></li>
+        <li><a href="reach_us.html">contact us</a></li>
+    </ul>
+</div>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
